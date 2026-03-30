@@ -1,59 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magic Onion</title>
+
   <style>
-    body {margin:0;font-family:Arial, sans-serif;background:black;color:white;}
-    .hero {height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
-    h1 {font-size:60px;margin:0;}
-    p {color:#aaa;max-width:600px;}
-    .btn {margin-top:20px;padding:12px 24px;border-radius:30px;background:white;color:black;text-decoration:none;}
-    .section {padding:80px 20px;text-align:center;}
-    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:1000px;margin:auto;}
-    .card {border:1px solid #222;padding:20px;border-radius:20px;}
+    body {
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, Arial;
+      background:black;
+      color:white;
+    }
+
+    h1,h2,h3 {margin:0}
+
+    .hero {
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1 {
+      font-size:60px;
+      font-weight:700;
+    }
+
+    .hero p {
+      color:#aaa;
+      max-width:600px;
+      margin-top:20px;
+      font-size:18px;
+    }
+
+    .btn {
+      margin-top:30px;
+      padding:14px 28px;
+      border-radius:30px;
+      background:white;
+      color:black;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover {
+      transform:scale(1.05);
+    }
+
+    .section {
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .section h2 {
+      font-size:36px;
+      margin-bottom:20px;
+    }
+
+    .section p {
+      color:#aaa;
+      max-width:700px;
+      margin:auto;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      max-width:1000px;
+      margin:40px auto 0;
+    }
+
+    .card {
+      border:1px solid #222;
+      padding:25px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .card:hover {
+      transform:translateY(-5px);
+      border-color:#555;
+    }
+
+    .cta {
+      background:white;
+      color:black;
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .cta h2 {
+      font-size:40px;
+    }
+
+    .cta p {
+      color:#333;
+      margin-top:10px;
+    }
+
+    .cta a {
+      display:inline-block;
+      margin-top:20px;
+      padding:14px 30px;
+      border-radius:30px;
+      background:black;
+      color:white;
+      text-decoration:none;
+    }
+
   </style>
 </head>
+
 <body>
 
+<!-- HERO -->
 <div class="hero">
   <h1>Magic Onion</h1>
-  <p>Top TikTok Live Agency for Latin America</p>
-  <a href="#join" class="btn">Join Us</a>
+  <p>
+    Agencia profesional de TikTok LIVE para creadores en Latinoamérica.
+    Crece más rápido, gana más dinero y llega a más audiencia.
+  </p>
+  <a href="#join" class="btn">Unirse Ahora</a>
 </div>
 
+<!-- PAIN POINT -->
 <div class="section">
-  <h2>Why Join Us</h2>
+  <h2>¿Te pasa esto?</h2>
+  <p>
+    Muchos creadores enfrentan los mismos problemas al hacer directos solos.
+  </p>
+
   <div class="grid">
-    <div class="card">Cash Rewards + High Commission</div>
-    <div class="card">1-on-1 Operation Support</div>
-    <div class="card">Traffic Boost & Official Resources</div>
+    <div class="card">❌ Pocos espectadores</div>
+    <div class="card">❌ Ingresos inestables</div>
+    <div class="card">❌ No sabes cómo crecer</div>
+    <div class="card">❌ Sin apoyo profesional</div>
   </div>
 </div>
 
+<!-- SOLUTION -->
 <div class="section">
-  <h2>About Magic Onion</h2>
+  <h2>Nosotros lo resolvemos</h2>
   <p>
-    We are a TikTok official agency focused on Latin American creators. We help streamers grow fast with training, traffic, rewards, and full team support.
+    En Magic Onion ayudamos a creadores a crecer con estrategia, recursos y soporte real.
   </p>
 </div>
 
+<!-- BENEFITS -->
 <div class="section">
-  <h2>What You Get</h2>
+  <h2>Lo que obtienes</h2>
+
   <div class="grid">
-    <div class="card">$10 Sign Bonus</div>
-    <div class="card">Monthly Cash Rewards</div>
-    <div class="card">Free Video Editing</div>
-    <div class="card">Professional Training</div>
-    <div class="card">Dedicated Manager</div>
-    <div class="card">Brand Deals Opportunities</div>
+    <div class="card">💰 Bonos en efectivo por rendimiento</div>
+    <div class="card">🎯 Manager 1 a 1</div>
+    <div class="card">🚀 Apoyo de crecimiento</div>
+    <div class="card">🎬 Edición de video GRATIS</div>
+    <div class="card">📚 Entrenamiento profesional</div>
+    <div class="card">🤝 Oportunidades de marca</div>
   </div>
 </div>
 
-<div class="section" id="join">
-  <h2>Join Magic Onion</h2>
-  <p>Contact us via WhatsApp / TikTok to start your journey</p>
+<!-- TRUST -->
+<div class="section">
+  <h2>¿Por qué Magic Onion?</h2>
+
+  <div class="grid">
+    <div class="card">✔ Contratos transparentes</div>
+    <div class="card">✔ Libertad total como creador</div>
+    <div class="card">✔ Pagos gestionados por TikTok</div>
+    <div class="card">✔ Sin costos ocultos</div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta" id="join">
+  <h2>Empieza hoy</h2>
+  <p>Únete a Magic Onion y lleva tu directo al siguiente nivel</p>
+
+  <!-- 👉 这里替换你的联系方式 -->
+  <a href="#">Contactar por WhatsApp</a>
 </div>
 
 </body>
