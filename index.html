@@ -6,14 +6,22 @@
   <title>Magic Onion</title>
 
   <style>
-    body {
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, Arial;
-      background:black;
-      color:white;
+    body {margin:0;font-family: -apple-system, BlinkMacSystemFont, Arial;background:black;color:white;}
+
+    .navbar {
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      padding:15px 30px;
+      display:flex;
+      align-items:center;
+      background:transparent;
     }
 
-    h1,h2,h3 {margin:0}
+    .logo {
+      height:40px;
+    }
 
     .hero {
       height:100vh;
@@ -25,17 +33,9 @@
       padding:20px;
     }
 
-    .hero h1 {
-      font-size:60px;
-      font-weight:700;
-    }
+    h1 {font-size:60px;margin:0;}
 
-    .hero p {
-      color:#aaa;
-      max-width:600px;
-      margin-top:20px;
-      font-size:18px;
-    }
+    p {color:#aaa;max-width:600px;}
 
     .btn {
       margin-top:30px;
@@ -45,28 +45,9 @@
       color:black;
       text-decoration:none;
       font-weight:bold;
-      transition:0.3s;
     }
 
-    .btn:hover {
-      transform:scale(1.05);
-    }
-
-    .section {
-      padding:80px 20px;
-      text-align:center;
-    }
-
-    .section h2 {
-      font-size:36px;
-      margin-bottom:20px;
-    }
-
-    .section p {
-      color:#aaa;
-      max-width:700px;
-      margin:auto;
-    }
+    .section {padding:80px 20px;text-align:center;}
 
     .grid {
       display:grid;
@@ -80,12 +61,6 @@
       border:1px solid #222;
       padding:25px;
       border-radius:20px;
-      transition:0.3s;
-    }
-
-    .card:hover {
-      transform:translateY(-5px);
-      border-color:#555;
     }
 
     .cta {
@@ -95,23 +70,10 @@
       text-align:center;
     }
 
-    .cta h2 {
-      font-size:40px;
-    }
-
-    .cta p {
-      color:#333;
-      margin-top:10px;
-    }
-
-    .cta a {
-      display:inline-block;
-      margin-top:20px;
-      padding:14px 30px;
-      border-radius:30px;
-      background:black;
-      color:white;
-      text-decoration:none;
+    .qr {
+      margin-top:30px;
+      width:220px;
+      border-radius:10px;
     }
 
   </style>
@@ -119,72 +81,61 @@
 
 <body>
 
+<!-- LOGO -->
+<div class="navbar">
+  <!-- 把 logo.jpg 换成你的logo文件名 -->
+  <img src="logo.jpg" class="logo">
+</div>
+
 <!-- HERO -->
 <div class="hero">
   <h1>Magic Onion</h1>
   <p>
     Agencia profesional de TikTok LIVE para creadores en Latinoamérica.
-    Crece más rápido, gana más dinero y llega a más audiencia.
   </p>
   <a href="#join" class="btn">Unirse Ahora</a>
 </div>
 
-<!-- PAIN POINT -->
+<!-- PAIN -->
 <div class="section">
   <h2>¿Te pasa esto?</h2>
-  <p>
-    Muchos creadores enfrentan los mismos problemas al hacer directos solos.
-  </p>
-
   <div class="grid">
     <div class="card">❌ Pocos espectadores</div>
     <div class="card">❌ Ingresos inestables</div>
-    <div class="card">❌ No sabes cómo crecer</div>
-    <div class="card">❌ Sin apoyo profesional</div>
+    <div class="card">❌ No sabes crecer</div>
+    <div class="card">❌ Sin apoyo</div>
   </div>
-</div>
-
-<!-- SOLUTION -->
-<div class="section">
-  <h2>Nosotros lo resolvemos</h2>
-  <p>
-    En Magic Onion ayudamos a creadores a crecer con estrategia, recursos y soporte real.
-  </p>
 </div>
 
 <!-- BENEFITS -->
 <div class="section">
   <h2>Lo que obtienes</h2>
-
   <div class="grid">
-    <div class="card">💰 Bonos en efectivo por rendimiento</div>
+    <div class="card">💰 Bonos en efectivo</div>
     <div class="card">🎯 Manager 1 a 1</div>
-    <div class="card">🚀 Apoyo de crecimiento</div>
-    <div class="card">🎬 Edición de video GRATIS</div>
-    <div class="card">📚 Entrenamiento profesional</div>
-    <div class="card">🤝 Oportunidades de marca</div>
+    <div class="card">🚀 Crecimiento</div>
+    <div class="card">🎬 Edición GRATIS</div>
   </div>
 </div>
 
 <!-- TRUST -->
 <div class="section">
   <h2>¿Por qué Magic Onion?</h2>
-
   <div class="grid">
-    <div class="card">✔ Contratos transparentes</div>
-    <div class="card">✔ Libertad total como creador</div>
-    <div class="card">✔ Pagos gestionados por TikTok</div>
-    <div class="card">✔ Sin costos ocultos</div>
+    <div class="card">✔ Transparente</div>
+    <div class="card">✔ Libertad total</div>
+    <div class="card">✔ Pagos oficiales</div>
+    <div class="card">✔ Sin riesgos</div>
   </div>
 </div>
 
 <!-- CTA -->
 <div class="cta" id="join">
-  <h2>Empieza hoy</h2>
-  <p>Únete a Magic Onion y lleva tu directo al siguiente nivel</p>
+  <h2>Contáctanos</h2>
+  <p>Escanea el código para hablar directamente</p>
 
-  <!-- 👉 这里替换你的联系方式 -->
-  <a href="#">Contactar por WhatsApp</a>
+  <!-- 把 qr.jpg 换成你的二维码文件名 -->
+  <img src="qr.jpg" class="qr">
 </div>
 
 </body>
